@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/d6a8dc03c9.js" crossorigin="anonymous"></script>
+    <title>Productos | Cinnamon</title>
+</head>
+
+<body>
+
+    <!-- cabecera -->
+
+    <header class="productosHeader">
+
+        <!-- navegacion -->
+
+        <nav class="menu">
+            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                    alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+            <ul>
+                <li class="itemLista"><a class="enlace" href="../index.html">HOME</a></li>
+                <li class="itemLista"><a class="enlace" href="productos.html">PRODUCTOS</a></li>
+                <li class="itemLista"><a class="enlace" href="patrones.html">PATRONES</a></li>
+                <li class="itemLista"><a class="enlace" href="contacto.html">CONTACTO</a></li>
+            </ul>
+
+            <!-- icono tienda / función de carrito -->
+
+            <a href="carrito.html" class="tienda"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                    viewBox="0 0 19.839 24" fill="#77518E" class="icon icon-cart">
+                    <path id="Path_3" data-name="Path 3"
+                        d="M324.717,408v-17.74l2.088.005v.031l17.751-.015V408H324.717Zm17.751-15.662H326.805v13.574h15.662Zm-5.221-3.009c0-2.13-.515-3.344-2.61-3.344s-2.61,1.215-2.61,3.344v.952h-2.088v-1.428c0-3.61,2.374-4.852,4.7-4.852a4.594,4.594,0,0,1,4.7,4.852v1.428h-2.088Z"
+                        transform="translate(-324.717 -384.002)"></path>
+                </svg></a>
+        </nav>
+
+        <!-- Servicios -->
+
+        <section class="servicios">
+            <div class="cardServicios">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p class="infoCardServicios">Entregas a todo el país</p>
+            </div>
+            <div class="cardServicios">
+                <i class="fa-regular fa-credit-card"></i>
+                <p class="infoCardServicios">3 coutas sin interés</p>
+            </div>
+            <div class="cardServicios">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p class="infoCardServicios">Mínimo de compra $00,000</p>
+            </div>
+        </section>
+        <!-- Banner -->
+        <section class="bannerContacto">
+            <div class="bannerContenidoContacto">
+                <h1 class="titulo">Productos</h1>
+            </div>
+        </section>
+    </header>
+
+    <!-- Aside de categorías -->
+    <main class="main-productos">
+        <aside class="menuAside">
+            <h2>categorías</h2>
+            <section class="prendas">
+                <h3 class="subtitulosCat">Prendas</h3>
+                <div class="opciones">
+                    <input type="checkbox" name="tops" id="top"><label for="top"> TOP </label>
+                    <input type="checkbox" name="boleros" id="bolero"><label for="bolero"> BOLERO </label>
+                    <input type="checkbox" name="remeras" id="remeras"><label for="remeras"> REMERAS </label>
+                    <input type="checkbox" name="cardigans" id="cardigans"><label for="cardigans"> CARDIGANS </label>
+                    <input type="checkbox" name="chalecos" id="chalecos"><label for="chalecos"> CHALECOS </label>
+                    <input type="checkbox" name="bikinis" id="bikinis"><label for="bikinis"> BIKINIS </label>
+                    <input type="checkbox" name="vestidos" id="vestidos"><label for="vestidos"> VESTIDOS </label>
+                    <input type="checkbox" name="polleras" id="polleras"><label for="polleras"> POLLERAS </label>
+                    <input type="checkbox" name="faldas" id="faldas"> <label for="faldas">FALDAS </label>
+                    <input type="checkbox" name="shorts" id="shorts"><label for="shorts"> SHORTS </label>
+                    <input type="checkbox" name="pantalones" id="pantalones"><label for="pantalones"> PANTALONES
+                    </label>
+                </div>
+            </section>
+            <section class="accesorios">
+                <h3 class="subtitulosCat">Accesorios</h3>
+                <div class="opciones">
+                    <input type="checkbox" name="tote bags" id="tote bag"><label for="tote bag"> TOTE BAGS </label>
+                    <input type="checkbox" name="carteras" id="carteras"><label for="carteras"> CARTERAS / BOLSOS
+                    </label>
+                    <input type="checkbox" name="posavasos" id="posavasos"><label for="posavasos"> POSA VASOS </label>
+                    <input type="checkbox" name="portatarjetas" id="portatarjetas"><label for="portatarjetas"> PORTA
+                        TARJETAS </label>
+                    <input type="checkbox" name="portaencendedor" id="portaencendedor"><label for="portaencendedor">
+                        PORTA ENCENDEDOR </label>
+                    <input type="checkbox" name="portatelefonos" id="portatelefonos"><label for="portatelefonos"> PORTA
+                        TELÉFONOS </label>
+                    <input type="checkbox" name="portabotellas" id="portabotellas"><label for="portabotellas"> PORTA
+                        BOTELLAS </label>
+                    <input type="checkbox" name="fundas" id="fundas"><label for="fundas"> FUNDAS </label>
+                    <input type="checkbox" name="mantas" id="mantas"><label for="mantas"> MANTAS </label>
+                    <input type="checkbox" name="bufandas" id="bufandas"><label for="bufandas"> BUFANDAS </label>
+                    <input type="checkbox" name="sombreros" id="sombreros"><label for="sombreros"> SOMBREROS / GORROS
+                    </label>
+                </div>
+            </section>
+            <h2 class="filtros"> Filtros </h2>
+            <details class="coloresD">
+                <summary class="subtitulosCat">colores <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                </summary>
+                <div class="coloresDiv">
+                    <input type="checkbox" name="negro" id="negro"><label for="negro"><span
+                            class="negro"></span>negro</label>
+                    <input type="checkbox" name="blanco" id="blanco"><label for="blanco"><span
+                            class="Blanco"></span>blanco</label>
+                    <input type="checkbox" name="gris" id="gris"><label for="gris"><span
+                            class="gris"></span>gris</label>
+                    <input type="checkbox" name="violeta" id="violeta"><label for="violeta"><span
+                            class="violeta"></span>violeta</label>
+                    <input type="checkbox" name="azul" id="azul"><label for="azul"><span
+                            class="azul"></span>azul</label>
+                    <input type="checkbox" name="celeste" id="celeste"><label for="celeste"><span
+                            class="celeste"></span>celeste</label>
+                    <input type="checkbox" name="verde" id="verde"><label for="verde"><span
+                            class="verde"></span>verde</label>
+                    <input type="checkbox" name="amarillo" id="amarillo"><label for="amarillo"><span
+                            class="amarillo"></span>amarillo</label>
+                    <input type="checkbox" name="rojo" id="rojo"><label for="rojo"><span
+                            class="rojo"></span>rojo</label>
+                    <input type="checkbox" name="naranja" id="naranja"><label for="naranja"><span
+                            class="naranja"></span>naranja</label>
+                    <input type="checkbox" name="rosado" id="rosado"><label for="rosado"><span
+                            class="rosado"></span>rosado</label>
+                    <input type="checkbox" name="marron" id="marron"><label for="marron"><span
+                            class="marron"></span>marrón</label>
+                </div>
+                <p> borrar filtros </p>
+            </details>
+            <details class="tallesD">
+                <summary id="summary" class="subtitulosCat">talle<i class="fa-solid fa-plus"></i><i
+                        class="fa-solid fa-minus"></i></summary>
+                <div class="tallesDiv">
+                    <input type="checkbox" name="xxs" id="xxs"><label for="xxs">xxs</label>
+                    <input type="checkbox" name="xs" id="xs"><label for="xs">xs</label>
+                    <input type="checkbox" name="s" id="s"><label for="s">s</label>
+                    <input type="checkbox" name="m" id="m"><label for="m">m</label>
+                    <input type="checkbox" name="l" id="l"><label for="l">l</label>
+                    <input type="checkbox" name="xl" id="xl"><label for="xl">xl</label>
+                    <input type="checkbox" name="xxl" id="xxl"><label for="xxl">xxl</label>
+                    <input type="checkbox" name="3xl" id="3xl"><label for="3xl">3xl</label>
+                </div>
+                <p> borrar filtros </p>
+                <a href="#">Ver guia de talles</a>
+            </details>
+        </aside>
+        <section class="productos">
+            <div class="cards-productos">
+                <article class="cards">
+                    <img src="../Recursos/producto1.jpg" alt="Chica con falda de volantes a crochet verde">
+                    <h3 class="nombreProducto">Falda Emma</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto2.jpg" alt="Bolso de tiras largas a crochet marrón">
+                    <h3 class="nombreProducto">Tote bag Sara</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto3.jpg"
+                        alt="Top a crochet con forma de corazón y mangas acampanadas, de colores calidos">
+                    <h3 class="nombreProducto">Top Sofía</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto4.jpg"
+                        alt="Porta botellas a crochet blanco con pequeñas frutillas rosadas">
+                    <h3 class="nombreProducto">Porta botellas Uma</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto9.jpg" alt="Pantalón negro a crochet con margaritas de colores">
+                    <h3 class="nombreProducto">Pantalón Ivy</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto10.jpg" alt="Bolero violeta a crochet">
+                    <h3 class="nombreProducto">Bolero Pilar</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto11.jpg" alt="Manta a crochet verde con margaritas">
+                    <h3 class="nombreProducto">Manta Cristal</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="../Recursos/producto12.jpg" alt="Vestido corto violeta con falda volada a crochet">
+                    <h3 class="nombreProducto">Vestido Aurora</h3>
+                    <div class="preCom">
+                        <p>$ 0.000</p>
+                        <a class="verMas" href="#">Comprar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerContenido">
+            <section class="navegacionFooter">
+                <h5>Navegación</h5>
+                <ul>
+                    <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
+                    <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
+                    <li class="itemNavF"><a class="link" href="patrones.html">PATRONES</a></li>
+                    <li class="itemNavF"><a class="link" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </section>
+            <section class="infoFooter">
+                <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                        alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+                <h4 class="tituloF">Cinnamon</h4>
+            </section>
+            <section class="contactoFooter">
+                <h5>Contáctanos</h5>
+                <div>
+                    <a class="link" href="#"><i class="fa-brands fa-whatsapp"></i>+54 9 3491 000000</a>
+                    <a class="link" href="#"><i class="fa-brands fa-instagram"></i>@cinnamoncrochet_</a>
+                    <a class="link" href="#"><i class="fa-solid fa-envelope"></i>cinnamontienda@gmail.com</a>
+                    <a class="link" href="#"><i class="fa-brands fa-facebook-f"></i>Cinnamon</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- Footer responsive -->
+    <footer class="footerResponsive">
+        <details class="navDesplegableF">
+            <summary id="summary" class="subtitulosCat">Navegación<i class="fa-solid fa-plus"></i><i
+                    class="fa-solid fa-minus"></i></summary>
+            <div class="navDiv">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="patrones.html">Patrones</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </details>
+        <details class="navDesplegableF">
+            <summary id="summary" class="subtitulosCat">CONTÁCTANOS<i class="fa-solid fa-plus"></i><i
+                    class="fa-solid fa-minus"></i></summary>
+            <div class="navDiv navC">
+                <a class="link" href="#"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
+                <a class="link" href="#"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
+                <a class="link" href="#"><i class="fa-solid fa-envelope"></i> cinnamontienda@gmail.com</a>
+                <a class="link" href="#"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+            </div>
+        </details>
+        <div class="LYM">
+            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+                <h2 class="tituloF">Cinnamon</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

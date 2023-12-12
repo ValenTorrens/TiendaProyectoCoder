@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/d6a8dc03c9.js" crossorigin="anonymous"></script>
+    <title> Carrito | Cinnamon </title>
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+        <!-- navegacion -->
+        <nav class="menu">
+            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+            <ul>
+                <li class="itemLista"><a class="enlace" href="../index.html">HOME</a></li>
+                <li class="itemLista"><a class="enlace" href="productos.html">PRODUCTOS</a></li>
+                <li class="itemLista"><a class="enlace" href="patrones.html">PATRONES</a></li>
+                <li class="itemLista"><a class="enlace" href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <!-- icono tienda / función de carrito -->
+            <a href="carrito.html" class="tienda"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+            viewBox="0 0 19.839 24" fill="#77518E" class="icon icon-cart">
+            <path id="Path_3" data-name="Path 3"
+            d="M324.717,408v-17.74l2.088.005v.031l17.751-.015V408H324.717Zm17.751-15.662H326.805v13.574h15.662Zm-5.221-3.009c0-2.13-.515-3.344-2.61-3.344s-2.61,1.215-2.61,3.344v.952h-2.088v-1.428c0-3.61,2.374-4.852,4.7-4.852a4.594,4.594,0,0,1,4.7,4.852v1.428h-2.088Z"
+            transform="translate(-324.717 -384.002)"></path>
+            </svg></a>
+        </nav>
+        <!-- Banner -->
+        <section class="bannerContacto">
+            <div class="bannerContenidoContacto">
+                <h1 class="titulo">Tu Carrito</h1>
+            </div>
+        </section>
+    </header>
+    <main class="mainCarrito">
+        <section class="tabla">
+        <table>
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Unidades</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="celda-producto">
+                            <img src="../Recursos/producto3.jpg"
+                                alt="Top a crochet con forma de corazón y mangas acampanadas, de colores calidos">
+                            <div class="infoCelda">
+                                <h3>TOP Sofía</h3>
+                                <p>multicolor</p>
+                                <p>M</p>
+                                <button class="boton">Eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="unidad">5</td>
+                    <td class="precio">$00.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="celda-producto">
+                            <img src="../Recursos/producto21.jpg"
+                                alt="Cardigan blanco con frutillas a crochet">
+                            <div class="infoCelda">
+                                <h3>Cardigan Mateo</h3>
+                                <p>Blanco</p>
+                                <p>L</p>
+                                <button class="boton">Eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="unidad">5</td>
+                    <td class="precio">$00.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="celda-producto">
+                            <img src="../Recursos/producto22.jpg"
+                                alt="cuadrado a crochet celeste con aplique de nube">
+                            <div class="infoCelda">
+                                <h3>PATRÓN LEO</h3>
+                                <p>celeste</p>
+                                <p>principiante</p>
+                                <button class="boton">Eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="unidad">5</td>
+                    <td class="precio">$00.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="celda-producto">
+                            <img src="../Recursos/producto9.jpg"
+                                alt="Pantalón negro a crochet con margaritas de colores">
+                            <div class="infoCelda">
+                                <h3>PATRÓN IVY</h3>
+                                <p>Negro</p>
+                                <p>L</p>
+                                <button class="boton">Eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="unidad">5</td>
+                    <td class="precio">$00.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="celda-producto">
+                            <img src="../Recursos/producto23.jpg"
+                                alt="Bolsita a crochet con frutillas">
+                            <div class="infoCelda">
+                                <h3>Bolso Dania</h3>
+                                <p>blanco</p>
+                                <button class="boton">Eliminar</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="unidad">5</td>
+                    <td class="precio">$00.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <aside class="resumenCompra">
+        <h2>Resumen de compra</h2>
+        <div class="subtotal">
+            <p>Subtotal</p><p>$00.000</p>
+        </div>
+        <div class="total">
+            <p>Total</p><p>$00.000</p>
+        </div>
+        <div class="descuento">
+        <p>¿Tenés un código de descuento?</p>
+        <p>Ingresalo acá</p>
+        <div>
+            <input type="text">
+            <button class="boton">APLICAR</button>
+        </div>
+        </div>
+        <a href="#" class="boton">CONFIRMAR MI COMPRA</a>
+    </aside>
+    </main>
+    <footer class="footer">
+        <div class="footerContenido">
+        <section class="navegacionFooter">
+            <h5>Navegación</h5>
+            <ul>
+                <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
+                <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
+                <li class="itemNavF"><a class="link" href="patrones.html">PATRONES</a></li>
+                <li class="itemNavF"><a class="link" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </section>
+        <section class="infoFooter">
+            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+            <h4 class="tituloF">Cinnamon</h4>
+        </section>
+        <section class="contactoFooter">
+            <h5>Contáctanos</h5>
+            <div>
+            <a class="link" href="#"><i class="fa-brands fa-whatsapp"></i>+54 9 3491 000000</a>
+            <a class="link" href="#"><i class="fa-brands fa-instagram"></i>@cinnamoncrochet_</a> 
+            <a class="link" href="#"><i class="fa-solid fa-envelope"></i>cinnamontienda@gmail.com</a>
+            <a class="link" href="#"><i class="fa-brands fa-facebook-f"></i>Cinnamon</a>
+            </div>
+    </section>
+    </div>
+    </footer>
+    <!-- Footer responsive -->
+    <footer class="footerResponsive">
+        <details class="navDesplegableF">
+            <summary id="summary" class="subtitulosCat">Navegación<i class="fa-solid fa-plus"></i><i
+                    class="fa-solid fa-minus"></i></summary>
+            <div class="navDiv">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="patrones.html">Patrones</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </details>
+        <details class="navDesplegableF">
+            <summary id="summary" class="subtitulosCat">CONTÁCTANOS<i class="fa-solid fa-plus"></i><i
+                    class="fa-solid fa-minus"></i></summary>
+            <div class="navDiv navC">
+                <a class="link" href="#"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
+                <a class="link" href="#"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
+                <a class="link" href="#"><i class="fa-solid fa-envelope"></i> cinnamontienda@gmail.com</a>
+                <a class="link" href="#"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+            </div>
+        </details>
+        <div class="LYM">
+            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+                <h2 class="tituloF">Cinnamon</h2>
+        </div>
+    </footer>
+</body>
+</html>
