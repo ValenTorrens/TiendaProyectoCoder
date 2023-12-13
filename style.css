@@ -321,7 +321,7 @@ body {
     color: #fff;
 }
 
-/* Proximamente inicio */
+/*   Proximamente inicio   */
 
 .proximamente {
     width: 100%;
@@ -368,6 +368,13 @@ body {
     justify-content: space-around;
     color: var(--colorVioleta);
 }
+
+/* proximamente responsive*/
+
+.carousel-inner {
+    display: none;
+}
+
 
 /* Footer */
 
@@ -1361,6 +1368,7 @@ tbody tr td {
 
     /* Main inicio responsive */
 
+    /*  servicios responsive  */
     .servicios {
         height: 60px;
         width: 100%;
@@ -1379,6 +1387,7 @@ tbody tr td {
         font-size: 10px;
     }
 
+    /*  productos nuevos y destacados responsive  */
     .tituloSection {
         text-align: center;
     }
@@ -1386,6 +1395,36 @@ tbody tr td {
     .contenedorCards {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    /*  proximamente responsive */
+
+    .proximamente {
+        display: none;
+    }
+    
+
+    .carousel-inner {
+        display: block;
+        background:var(--gradiente);
+        width: 100%;
+        height: 430px;
+    }
+    
+    .carousel-inner .tituloSection {
+        color: #fff;
+        padding-top: 20px;
+    }
+    .carousel-item img {
+        padding: 20px;
+        object-fit: cover;
+        object-position: center;
+        max-width: 330px;
+        margin: auto;
+    }
+
+    .carousel-control-next {
+        opacity: 1;
     }
 
     .contenedorProxi {
