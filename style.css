@@ -41,6 +41,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 50;
 }
 
 /*logo*/
@@ -91,9 +93,21 @@ body {
 
 /* menu desplegable */
 
-.menu i {
-    display: none;
+
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+
 }
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+} 
+
+.menu-icon svg {vertical-align: top;}
+
 
 /* Banner Inicio*/
 
@@ -1265,9 +1279,52 @@ tbody tr td {
 @media only screen and (max-width:480px) {
 
     /*Nav responsive */
+    
+    .logo {
+        margin: 10px 20px ;
+    }
+
+    .tienda {
+        margin-right: 70px;
+    }
+    
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 33px;
+    }
 
     ul {
-        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top:100px;
+        right: -100%;
+        padding-top: 20px;
+        background:var(--gradiente);
+        transition: all 0.8s ease;
+    }
+
+    ul .itemLista {
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    ul .itemLista .enlace {
+        border: none;
+        color: #fff;
+        padding: 0 0 3px 0;
+    }
+
+    ul .itemLista .enlace:hover {
+        background: none;
+        border-bottom: 2px solid #fff ;
+    }
+
+    #menu-toggle:checked ~ ul {
+        right: 0;
     }
 
     /*  Banner responsive  */
