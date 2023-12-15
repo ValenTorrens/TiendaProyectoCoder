@@ -590,8 +590,6 @@ textarea:focus {
     box-shadow: 2px 1px 10px #a5a5a588;
 }
 
-
-
 /* Boton enviar del formulario */
 
 .contenedorForm .contenidoForm .enviar {
@@ -1313,6 +1311,7 @@ tbody tr td {
         padding-top: 20px;
         background:var(--gradiente);
         transition: all 0.8s ease;
+        display: none;
     }
 
     ul .itemLista {
@@ -1334,6 +1333,7 @@ tbody tr td {
 
     #menu-toggle:checked ~ ul {
         right: 0;
+        display: block;
     }
 
     /*  Banner responsive  */
@@ -1486,6 +1486,7 @@ tbody tr td {
         font-weight: 500;
         color: #77518E;
         letter-spacing: 1px;
+        text-decoration: none;
     }
 
     .navDiv a:hover {
@@ -1522,6 +1523,26 @@ tbody tr td {
 
     .LYM img {
         margin: 0;
+    }
+
+    /*   -------------- Page contacto responsive -------------------*/
+
+    .mainContacto {
+        width: 100%;
+        padding: 0 30px;
+        height: 1100px;
+    }
+
+    .contenedorForm {
+        width:100%;
+        padding: 30px;
+    }
+
+    .contenedorForm .contenidoForm .enviar {
+        padding: 15px;
+    }
+    .contactanos{
+        width: 100%;
     }
 }
 
