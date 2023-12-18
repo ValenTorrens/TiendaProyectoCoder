@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+
+dl, ol, ul {
+    margin-bottom: 0;
 }
 
 :root {
@@ -104,9 +109,11 @@ body {
     font-size: 30px;
     cursor: pointer;
     display: none;
-} 
+}
 
-.menu-icon svg {vertical-align: top;}
+.menu-icon svg {
+    vertical-align: top;
+}
 
 
 /* Banner Inicio*/
@@ -372,6 +379,11 @@ body {
 /* proximamente responsive*/
 
 .carousel-inner {
+    display: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
     display: none;
 }
 
@@ -973,11 +985,11 @@ details p {
 /* fondo */
 
 .patrones .card-patrones .fondo {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
-    position:absolute;
+    position: absolute;
 }
 
 /* etiqueta gratis */
@@ -1175,7 +1187,9 @@ tbody tr td {
     margin-bottom: 5px;
 }
 
-.infoCelda .boton, .descuento div .boton, .resumenCompra a {
+.infoCelda .boton,
+.descuento div .boton,
+.resumenCompra a {
     border: 2px solid var(--colorVioletaClaro);
     padding: 5px 10px;
     color: #fff;
@@ -1189,7 +1203,9 @@ tbody tr td {
     transition: .5s;
 }
 
-.infoCelda .boton:hover, .descuento div .boton:hover, .resumenCompra a:hover{
+.infoCelda .boton:hover,
+.descuento div .boton:hover,
+.resumenCompra a:hover {
     color: var(--colorVioletaClaro);
     background: transparent;
 }
@@ -1200,11 +1216,40 @@ tbody tr td {
     font-weight: 500;
 }
 
+/*  links final de tabla */
+.linksCarrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.linksCarrito a {
+    text-transform: uppercase;
+    color: var(--colorVioleta);
+    letter-spacing: 2px;
+    font-size: 13px;
+    padding-bottom: 5px; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    border-bottom:2px solid transparent;
+    transition: .3s all ease-in;
+}
+
+.linksCarrito a i {
+    font-size: 16px;
+}
+
+.linksCarrito a:hover {
+    border-bottom: 2px solid var(--colorVioleta);
+}
 
 /*  Aside de resumen de compra */
 .resumenCompra {
     width: 30%;
-    height: 390px;
+    height: 30%;
     border-style: solid;
     border-width: 3px;
     border-image: linear-gradient(156deg,
@@ -1239,7 +1284,7 @@ tbody tr td {
 
 .descuento {
     border-top: 2px solid #77518e49;
-    padding-top:30px; 
+    padding-top: 30px;
 }
 
 .descuento p {
@@ -1250,12 +1295,13 @@ tbody tr td {
 .descuento p:first-child {
     margin-bottom: 20px;
 }
+
 .descuento p:nth-child(2) {
     font-size: 13.5px;
     margin-bottom: 10px;
 }
 
-.descuento div input{
+.descuento div input {
     width: 220px;
     padding: 5px;
     outline: none;
@@ -1275,9 +1321,9 @@ tbody tr td {
 .resumenCompra a {
     display: block;
     position: relative;
-    padding:10px 10px;
+    padding: 10px 10px;
     text-align: center;
-    
+
 }
 
 /*-------------------------------------  R E S P O N S I V E   I N I C I O  --------------------------------------------------*/
@@ -1286,16 +1332,16 @@ tbody tr td {
 @media only screen and (max-width:480px) {
 
     /*Nav responsive */
-    
+
     .logo {
-        margin: 10px 20px ;
+        margin: 10px 20px;
     }
 
     .tienda {
         margin-right: 70px;
     }
-    
-    .menu-icon{
+
+    .menu-icon {
         display: block;
         position: absolute;
         right: 20px;
@@ -1306,10 +1352,10 @@ tbody tr td {
         position: absolute;
         width: 100%;
         height: 100vh;
-        top:100px;
+        top: 100px;
         right: -100%;
         padding-top: 20px;
-        background:var(--gradiente);
+        background: var(--gradiente);
         transition: all 0.8s ease;
         display: none;
     }
@@ -1328,10 +1374,10 @@ tbody tr td {
 
     ul .itemLista .enlace:hover {
         background: none;
-        border-bottom: 2px solid #fff ;
+        border-bottom: 2px solid #fff;
     }
 
-    #menu-toggle:checked ~ ul {
+    #menu-toggle:checked~ul {
         right: 0;
         display: block;
     }
@@ -1374,14 +1420,21 @@ tbody tr td {
     .servicios {
         display: none;
     }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: block;
+    }
+
     #carouselExampleInterval .carousel-inner {
         height: 95px;
         background: transparent;
     }
+
     #carouselExampleInterval .carousel-inner img {
         max-width: 420px;
     }
-    
+
 
     .servicios .cardServicios .infoCardServicios {
         font-size: 10px;
@@ -1402,19 +1455,20 @@ tbody tr td {
     .proximamente {
         display: none;
     }
-    
+
 
     .carousel-inner {
         display: block;
-        background:var(--gradiente);
+        background: var(--gradiente);
         width: 100%;
         height: 430px;
     }
-    
+
     .carousel-inner .tituloSection {
         color: #fff;
         padding-top: 20px;
     }
+
     .carousel-item img {
         padding: 20px;
         object-fit: cover;
@@ -1525,7 +1579,7 @@ tbody tr td {
         margin: 0;
     }
 
-    /*   -------------- Page contacto responsive -------------------*/
+    /*  ---------------- Page contacto responsive -------------------*/
 
     .mainContacto {
         width: 100%;
@@ -1534,20 +1588,72 @@ tbody tr td {
     }
 
     .contenedorForm {
-        width:100%;
+        width: 100%;
         padding: 30px;
     }
 
     .contenedorForm .contenidoForm .enviar {
         padding: 15px;
     }
-    .contactanos{
+
+    .contactanos {
         width: 100%;
     }
+
+    /*------------------ Carrito responsive ---------------------*/
+
+    .mainCarrito {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    /*Tabla productos responsive*/
+
+    .ElimRespC { 
+        display: none;
+    }
+
+    .tabla {
+        width: 100%;
+    } 
+
+    .infoCelda {
+        width: 100%;
+    }
+
+    .infoCelda div {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        gap: 15px;
+        align-items: baseline;
+    }
+
+    .infoCelda div p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--colorVioleta);
+        padding: 5px 10px;
+        border: 1px solid var(--colorVioleta);
+    }
+
+    .infoCelda .boton {
+        position: relative;
+        font-size: 13px;
+    }
+
+    /* Resumen compra responsive*/
+
+    .resumenCompra {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
 }
 
 /* TABLET */
 @media only screen and (min-width:481px) and (max-width:978px) {}
-
-/* DESKTOP */
-@media only screen and (min-width:979px) {}
