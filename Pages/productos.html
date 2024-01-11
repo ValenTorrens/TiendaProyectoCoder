@@ -20,7 +20,7 @@
         <!-- navegacion -->
 
         <nav class="menu">
-            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+            <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
                     alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
             <!-- Icono bars para responsive -->
             <input type="checkbox" id="menu-toggle">
@@ -70,13 +70,13 @@
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2300">
-                    <img src="../Recursos/servicios1.png" class="d-block w-100" alt="Entregas a todo el país">
+                    <img src="../recursos/servicios1.png" class="d-block w-100" alt="Entregas a todo el país">
                 </div>
                 <div class="carousel-item" data-bs-interval="2300">
-                    <img src="../Recursos/servicios2.png" class="d-block w-100" alt="3 coutas sin interés">
+                    <img src="../recursos/servicios2.png" class="d-block w-100" alt="3 coutas sin interés">
                 </div>
                 <div class="carousel-item" data-bs-interval="2300">
-                    <img src="../Recursos/servicios3.png" class="d-block w-100" alt="Mínimo de compra $00.000">
+                    <img src="../recursos/servicios3.png" class="d-block w-100" alt="Mínimo de compra $00.000">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -101,7 +101,9 @@
 
     <!-- Aside de categorías -->
     <main class="main-productos">
-        <aside class="menuAside">
+        <!-- desplegable mobile -->
+
+        <aside class="menuAside asidedesk">
             <h2>categorías</h2>
             <section class="prendas">
                 <h3 class="subtitulosCat">Prendas</h3>
@@ -191,10 +193,142 @@
                 <a href="#">Ver guia de talles</a>
             </details>
         </aside>
+
+        <!-- filtros desplegables con bootstrap vista mobile -->
+        <section class="filtrosdesp">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">Filtrar por</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <aside class="menuAside">
+                        <h2>categorías</h2>
+                        <section class="prendas">
+                            <h3 class="subtitulosCat">Prendas</h3>
+                            <div class="opciones">
+                                <input type="checkbox" name="tops" id="t"><label for="t"> TOP </label>
+                                <input type="checkbox" name="boleros" id="bo"><label for="bo"> BOLERO </label>
+                                <input type="checkbox" name="remeras" id="r"><label for="r"> REMERAS
+                                </label>
+                                <input type="checkbox" name="cardigans" id="c"><label for="c"> CARDIGANS
+                                </label>
+                                <input type="checkbox" name="chalecos" id="ch"><label for="ch"> CHALECOS
+                                </label>
+                                <input type="checkbox" name="bikinis" id="b"><label for="b"> BIKINIS
+                                </label>
+                                <input type="checkbox" name="vestidos" id="v"><label for="v"> VESTIDOS
+                                </label>
+                                <input type="checkbox" name="polleras" id="p"><label for="p"> POLLERAS
+                                </label>
+                                <input type="checkbox" name="faldas" id="f"><label for="f">FALDAS</label>
+                                <input type="checkbox" name="shorts" id="g"><label for="g">SHORTS</label>
+                                <input type="checkbox" name="pantalones" id="k"><label for="k">PANTALONES</label>
+
+                            </div>
+                        </section>
+                        <section class="accesorios">
+                            <h3 class="subtitulosCat">Accesorios</h3>
+                            <div class="opciones">
+                                <input type="checkbox" name="tote bags" id="tote"><label for="tote"> TOTE BAGS
+                                </label>
+                                <input type="checkbox" name="carteras" id="car"><label for="car"> CARTERAS /
+                                    BOLSOS
+                                </label>
+                                <input type="checkbox" name="posavasos" id="va"><label for="va"> POSA
+                                    VASOS </label>
+                                <input type="checkbox" name="portatarjetas" id="tar"><label
+                                    for="tar"> PORTA
+                                    TARJETAS </label>
+                                <input type="checkbox" name="portaencendedor" id="enc"><label
+                                    for="enc">
+                                    PORTA ENCENDEDOR </label>
+                                <input type="checkbox" name="portatelefonos" id="tel"><label
+                                    for="tel"> PORTA
+                                    TELÉFONOS </label>
+                                <input type="checkbox" name="portabotellas" id="bot"><label
+                                    for="bot"> PORTA
+                                    BOTELLAS </label>
+                                <input type="checkbox" name="fundas" id="fun"><label for="fun"> FUNDAS </label>
+                                <input type="checkbox" name="mantas" id="man"><label for="man"> MANTAS </label>
+                                <input type="checkbox" name="bufandas" id="buf"><label for="buf"> BUFANDAS
+                                </label>
+                                <input type="checkbox" name="sombreros" id="sombreros"><label for="sombreros"> SOMBREROS
+                                    / GORROS
+                                </label>
+                            </div>
+                        </section>
+                        <h2 class="filtros"> Filtros </h2>
+                        <details class="coloresD">
+                            <summary class="subtitulosCat">colores <i class="fa-solid fa-plus"></i><i
+                                    class="fa-solid fa-minus"></i>
+                            </summary>
+                            <div class="coloresDiv">
+                                <input type="checkbox" name="negro" id="negro"><label for="negro"><span
+                                        class="negro"></span>negro</label>
+                                <input type="checkbox" name="blanco" id="blanco"><label for="blanco"><span
+                                        class="Blanco"></span>blanco</label>
+                                <input type="checkbox" name="gris" id="gris"><label for="gris"><span
+                                        class="gris"></span>gris</label>
+                                <input type="checkbox" name="violeta" id="violeta"><label for="violeta"><span
+                                        class="violeta"></span>violeta</label>
+                                <input type="checkbox" name="azul" id="azul"><label for="azul"><span
+                                        class="azul"></span>azul</label>
+                                <input type="checkbox" name="celeste" id="celeste"><label for="celeste"><span
+                                        class="celeste"></span>celeste</label>
+                                <input type="checkbox" name="verde" id="verde"><label for="verde"><span
+                                        class="verde"></span>verde</label>
+                                <input type="checkbox" name="amarillo" id="amarillo"><label for="amarillo"><span
+                                        class="amarillo"></span>amarillo</label>
+                                <input type="checkbox" name="rojo" id="rojo"><label for="rojo"><span
+                                        class="rojo"></span>rojo</label>
+                                <input type="checkbox" name="naranja" id="naranja"><label for="naranja"><span
+                                        class="naranja"></span>naranja</label>
+                                <input type="checkbox" name="rosado" id="rosado"><label for="rosado"><span
+                                        class="rosado"></span>rosado</label>
+                                <input type="checkbox" name="marron" id="marron"><label for="marron"><span
+                                        class="marron"></span>marrón</label>
+                            </div>
+                            <p> borrar filtros </p>
+                        </details>
+                        <details class="tallesD">
+                            <summary id="summary" class="subtitulosCat">talle<i class="fa-solid fa-plus"></i><i
+                                    class="fa-solid fa-minus"></i></summary>
+                            <div class="tallesDiv">
+                                <input type="checkbox" name="xxs" id="xxs"><label for="xxs">xxs</label>
+                                <input type="checkbox" name="xs" id="xs"><label for="xs">xs</label>
+                                <input type="checkbox" name="s" id="s"><label for="s">s</label>
+                                <input type="checkbox" name="m" id="m"><label for="m">m</label>
+                                <input type="checkbox" name="l" id="l"><label for="l">l</label>
+                                <input type="checkbox" name="xl" id="xl"><label for="xl">xl</label>
+                                <input type="checkbox" name="xxl" id="xxl"><label for="xxl">xxl</label>
+                                <input type="checkbox" name="3xl" id="3xl"><label for="3xl">3xl</label>
+                            </div>
+                            <p> borrar filtros </p>
+                            <a href="#">Ver guia de talles</a>
+                        </details>
+                    </aside>
+                </div>
+            </div>
+            <section class="tallesDiv filtrosSel coloresDiv">
+                <input type="checkbox" name="s" id="s"><label for="s">s</label>
+                <input type="checkbox" name="m" id="m"><label for="m">m</label>
+                <input type="checkbox" name="rojo" id="rojo"><label for="rojo"><span class="rojo"></span>rojo</label>
+                <input type="checkbox" name="rosado" id="rosado"><label for="rosado"><span
+                        class="rosado"></span>rosado</label>
+                <input type="checkbox" name="violeta" id="violeta"><label for="violeta"><span
+                        class="violeta"></span>violeta</label>
+                <a href="#"> Borrar filtros</a>
+            </section>
+        </section>
+
         <section class="productos">
             <div class="cards-productos">
                 <article class="cards">
-                    <img src="../Recursos/producto1.jpg" alt="Chica con falda de volantes a crochet verde">
+                    <img src="../recursos/producto1.jpg" alt="Chica con falda de volantes a crochet verde">
                     <h3 class="nombreProducto">Falda Emma</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -202,7 +336,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto2.jpg" alt="Bolso de tiras largas a crochet marrón">
+                    <img src="../recursos/producto2.jpg" alt="Bolso de tiras largas a crochet marrón">
                     <h3 class="nombreProducto">Tote bag Sara</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -210,7 +344,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto3.jpg"
+                    <img src="../recursos/producto3.jpg"
                         alt="Top a crochet con forma de corazón y mangas acampanadas, de colores calidos">
                     <h3 class="nombreProducto">Top Sofía</h3>
                     <div class="preCom">
@@ -219,7 +353,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto4.jpg"
+                    <img src="../recursos/producto4.jpg"
                         alt="Porta botellas a crochet blanco con pequeñas frutillas rosadas">
                     <h3 class="nombreProducto">Porta botellas Uma</h3>
                     <div class="preCom">
@@ -228,7 +362,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto9.jpg" alt="Pantalón negro a crochet con margaritas de colores">
+                    <img src="../recursos/producto9.jpg" alt="Pantalón negro a crochet con margaritas de colores">
                     <h3 class="nombreProducto">Pantalón Ivy</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -236,7 +370,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto10.jpg" alt="Bolero violeta a crochet">
+                    <img src="../recursos/producto10.jpg" alt="Bolero violeta a crochet">
                     <h3 class="nombreProducto">Bolero Pilar</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -244,7 +378,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto11.jpg" alt="Manta a crochet verde con margaritas">
+                    <img src="../recursos/producto11.jpg" alt="Manta a crochet verde con margaritas">
                     <h3 class="nombreProducto">Manta Cristal</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -252,7 +386,7 @@
                     </div>
                 </article>
                 <article class="cards">
-                    <img src="../Recursos/producto12.jpg" alt="Vestido corto violeta con falda volada a crochet">
+                    <img src="../recursos/producto12.jpg" alt="Vestido corto violeta con falda volada a crochet">
                     <h3 class="nombreProducto">Vestido Aurora</h3>
                     <div class="preCom">
                         <p>$ 0.000</p>
@@ -274,7 +408,7 @@
                 </ul>
             </section>
             <section class="infoFooter">
-                <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+                <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
                         alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
                 <h4 class="tituloF">Cinnamon</h4>
             </section>
@@ -312,7 +446,7 @@
             </div>
         </details>
         <div class="LYM">
-            <a href="../index.html"><img src="../Recursos/logo.svg" class="logo"
+            <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
                     alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
             <h2 class="tituloF">Cinnamon</h2>
         </div>
@@ -320,11 +454,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
