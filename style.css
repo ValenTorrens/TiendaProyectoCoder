@@ -244,6 +244,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards {
@@ -515,7 +516,7 @@ body {
     background: var(--gradiente);
 }
 
-.bannerContenidoContacto .titulo {
+.bannerContenidoContacto .titulo, .bannerProductos .titulo {
     height: 130px;
     font-size: 75px;
     display: flex;
@@ -1665,6 +1666,9 @@ tbody tr td {
         padding: 20px 15px;
     }
 
+    .bannerProductos .titulo {
+        font-size: 64px;
+    }
     /* aside */
 
     .asidedesk {
@@ -1694,6 +1698,60 @@ tbody tr td {
         margin: 0 5px;
     }
 
+    /* desplegable */
+
+    .offcanvas-title{
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: var(--colorVioleta);
+    } 
+
+    .btn-primary {
+        margin-top: 10px;
+        font-size: 13px;
+        background-color: var(--colorVioleta);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        font-weight: 500;
+        border: 2px solid var(--colorVioleta);
+        border-radius: 0px;
+    }
+
+    .btn-primary:enabled {
+        background-color: var(--colorVioleta);
+        border-color: var(--colorVioleta);
+    }
+    
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--colorVioleta);
+    border-color: var(--colorVioleta);}
+
+    .prendas, .accesorios {
+        position: relative;
+    }
+
+    .opciones label::before {
+        left: 0;
+    }
+
+    details .subtitulosCat {
+        position: relative;
+    }
+
+    .coloresDiv, .tallesDiv {
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+    }
+
+    .coloresDiv label, .tallesDiv label {
+        width: 110px;
+        margin: 5px;
+    }
+
     /* grid productos responsive */
 
     .productos {
@@ -1701,34 +1759,7 @@ tbody tr td {
     }
 
     .cards-productos {
-        grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
-        grid-template-rows: 300px;
-        row-gap: 15px;
         justify-items: center;
-    }
-
-    .cards-productos .cards {
-        height: 300px;
-        width: 190px;
-        padding: 10px;
-    }
-
-    .cards-productos .cards img {
-        width: 164px;
-        height: 192px;
-    }
-
-    .cards-productos .cards .nombreProducto {
-        font-size: 14px;
-    }
-    
-    .cards-productos .cards .preCom p {
-        font-size: 14px;
-    }
-
-    .cards-productos .cards .preCom a {
-        font-size: 12px;
-        padding: 4px 8px;
     }
 
     p {
