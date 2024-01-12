@@ -1526,7 +1526,7 @@ tbody tr td {
 
     .navDesplegableF .subtitulosCat i {
         position: absolute;
-        right: 30px;
+        right: 0;
     }
 
     .navDesplegableF[open] [class="fa-solid fa-plus"] {
@@ -1612,6 +1612,11 @@ tbody tr td {
         flex-direction: column;
         gap: 20px;
         padding-bottom: 40px;
+        padding: 10px;
+    }
+
+    .bannerCarrito .titulo{
+        font-size: 65px;
     }
 
     /*Tabla productos responsive*/
@@ -1620,9 +1625,17 @@ tbody tr td {
         display: none;
     }
 
+    tbody tr td {
+        height: 170px;
+    }
+
     .tabla {
         width: 100%;
     } 
+
+    .celda-producto {
+        height: 140px 
+    }
 
     .infoCelda {
         width: 100%;
@@ -1632,8 +1645,7 @@ tbody tr td {
         display: flex;
         position: absolute;
         bottom: 0;
-        gap: 15px;
-        align-items: baseline;
+        align-items: center;
     }
 
     .infoCelda div p {
@@ -1641,14 +1653,16 @@ tbody tr td {
         font-size: 16px;
         font-weight: 600;
         color: var(--colorVioleta);
-        padding: 5px 10px;
+        padding: 4.8px 10px;
         border: 1px solid var(--colorVioleta);
     }
 
     .infoCelda .boton {
         position: relative;
         font-size: 13px;
+        padding: 6px 10px;
     }
+
 
     /* Resumen compra responsive*/
 
@@ -1658,10 +1672,11 @@ tbody tr td {
         
     }
 
-    /*  Productos responsive */
+
+    /*  Productos y Patrones responsive */
     /* main */
 
-    .main-productos {
+    .main-productos, .mainPatrones {
         flex-direction: column;
         padding: 20px 15px;
     }
@@ -1690,6 +1705,8 @@ tbody tr td {
     }
 
     .filtrosSel a {
+        cursor: pointer;
+        white-space: nowrap;
         color: var(--colorVioleta);
         text-decoration: none;
         text-transform: uppercase;
@@ -1737,6 +1754,12 @@ tbody tr td {
         left: 0;
     }
 
+    .opciones label {
+        display: flex;
+        align-items: center;
+    }
+    
+
     details .subtitulosCat {
         position: relative;
     }
@@ -1749,7 +1772,21 @@ tbody tr td {
 
     .coloresDiv label, .tallesDiv label {
         width: 110px;
-        margin: 5px;
+        margin: 5px 0;
+    }
+
+    .niveles label {
+        width: 120px;
+    }
+
+    .offcanvas-body {
+        position: relative;
+        top: -15px;
+    }
+
+    .btn-close:focus {
+        box-shadow: none;
+        opacity: 0;
     }
 
     /* grid productos responsive */
