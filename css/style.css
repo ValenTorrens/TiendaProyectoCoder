@@ -101,7 +101,6 @@ body {
 
 [type="checkbox"] {
     display: none;
-
 }
 
 .menu-icon {
@@ -510,13 +509,13 @@ body {
 
 /* Banner contacto */
 
-.bannerContacto {
+.bannerPages {
     width: 100%;
     height: 130px;
     background: var(--gradiente);
 }
 
-.bannerContenidoContacto .titulo, .bannerProductos .titulo {
+.bannerContenidoPages .titulo, .bannerProductos .titulo {
     height: 130px;
     font-size: 75px;
     display: flex;
@@ -719,11 +718,6 @@ textarea:focus {
     color: #4e5c46;
 }
 
-[type="checkbox"] {
-    opacity: 0;
-    position: absolute;
-}
-
 .opciones label::before {
     content: ' ';
     position: absolute;
@@ -742,7 +736,6 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    color: #fff;
     background-color: var(--colorRosa);
 }
 
@@ -1611,8 +1604,8 @@ tbody tr td {
         width: 100%;
         flex-direction: column;
         gap: 20px;
-        padding-bottom: 40px;
         padding: 10px;
+        padding-bottom: 40px;
     }
 
     .bannerCarrito .titulo{

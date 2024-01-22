@@ -1,0 +1,199 @@
+/* I N D E X */
+/* Main */
+
+/* Servicios inicio */
+
+.servicios {
+    margin: 0 auto;
+    width: 80%;
+    height: 90px;
+    @include flex (space-between, center, row);
+
+
+    .cardServicios {
+        display: flex;
+        gap: 20px;
+
+        i {
+            font-size: 25px;
+            color: $verde;
+        }
+
+        .infoCardServicios {
+            @include estiloText (19px, 2px, $violeta);
+            font-family: $fontCuerpo;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+/* Index responsive bootstrap */
+
+.carousel-inner {
+    display: none;
+}
+
+/*  Productos destacados */
+
+.destacados {
+    margin: 30px auto;
+    width: 80%;
+    @include flex (space-around, center, column);
+    color: $violeta;
+
+    .tituloSection {
+        font-family: $fontCuerpo;
+        text-transform: uppercase;
+        @include estiloText (28px, 3px, $violeta);
+        font-weight: 500;
+        text-shadow: 2px 1px 5px #d8d8d8;
+    }
+
+    .contenedorCards {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        gap: 20px;
+        @include flex (space-between, center, row);
+        flex-wrap: wrap;
+
+        .cards {
+            width: 260px;
+            height: 370px;
+            border: 3.5px solid $verde;
+            padding: 15px;
+            box-shadow: 2px 1px 5px #d8d8d8;
+            @include flex (end, stretch, column);
+            overflow: hidden;
+
+            img {
+                width: 225px;
+                height: 230px;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .nombreProducto {
+                font-weight: 500;
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-align: start;
+                font-family: $fontCuerpo;
+            }
+
+            .preCom {
+                width: 100%;
+                @include flex (space-between, baseline, row);
+                margin-top: auto;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                a {
+                    @include estiloText (12px, 2.5px, #fff);
+                    text-shadow: 2px 1px 5px #a3a3a3;
+                    text-decoration: none;
+                    font-family: $fontCuerpo;
+                    border: 2px solid $verde;
+                    padding: 4px 10px;
+                    font-weight: 500;
+                    background-color: $verde;
+                    text-transform: uppercase;
+                    box-shadow: 2px 1px 4px #c8c8c888;
+                    transition: .5s, color .2s, font-weight .2s;
+
+                    &:hover {
+                        color: $verde;
+                        background-color: transparent;
+                        font-weight: 600;
+                        text-shadow: none;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .verPro {
+        @include estiloText (18px, 1.3px, #fff);
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 8px 15px;
+        background-color: $violeta;
+        font-family: $fontCuerpo;
+        text-decoration: none;
+        border: 2.5px solid $violeta;
+        transition: background-color 300ms ease-in-out;
+        &:hover {
+            border-style: solid;
+            border-width: 2.5px;
+            border-image: linear-gradient(156deg,
+                    rgba(131, 162, 114, 1) 11%,
+                    rgba(206, 182, 221, 1) 49%,
+                    rgba(250, 199, 198, 1) 90%) 1;
+            font-weight: 500;
+            background: linear-gradient(156deg,
+                    rgba(96, 121, 82, 0.8) 11%,
+                    rgba(146, 112, 167, 0.8) 49%,
+                    rgba(192, 152, 151, 0.8) 90%);
+        }
+    }
+}
+
+/* Proximamente */
+
+.proximamente {
+    width: 100%;
+    margin-top: 50px;
+    background: linear-gradient(156deg,
+            rgba(131, 162, 114, .5) 11%,
+            rgba(206, 182, 221, .5) 49%,
+            rgba(250, 199, 198, .5) 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tituloSection {
+        @include estiloText (28px, 3px, #fff);
+        margin-top: 40px;
+        font-family: $fontCuerpo;
+    }
+
+    .contenedorProxi {
+        width: 80%;
+        margin: 20px 0 30px 0;
+        height: auto;
+        gap: 10px;
+        @include flex (space-between, center,row);
+        flex-wrap: wrap;
+    }
+
+    .contenedorProxi img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* Productos nuevos */
+
+.nuevos {
+    @extend .destacados;
+    margin: 60px auto;
+}
+
+/* proximamente responsive*/
+
+.carousel-control-next,
+.carousel-control-prev {
+    display: none;
+}

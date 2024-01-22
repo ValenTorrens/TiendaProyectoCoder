@@ -1,0 +1,119 @@
+/*  F O O T E R  */
+
+.footerResponsive {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+    background: linear-gradient(156deg,
+            rgba(131, 162, 114, .5) 11%,
+            rgba(206, 182, 221, .5) 49%,
+            rgba(250, 199, 198, .5) 90%);
+
+    .footerContenido {
+        margin: auto;
+        width: 80%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+
+
+        .navegacionFooter {
+            width: 346px;
+            height: 200px;
+            @include flex (flex-start, end, column);
+            margin-top: 20px;
+
+            .subtituloF {
+                margin-bottom: 20px;
+                @include estiloText (18px, 2.7px, rgb(143, 127, 154));
+                font-weight: 600;
+                text-transform: uppercase;
+                font-family: $fontCuerpo;
+            }
+
+            ul {
+
+                .itemNavF {
+                    text-align: end;
+                    margin-bottom: 18px;
+                    font-size: 16px;
+
+                    .link {
+                        text-decoration: none;
+                        color: #77518E;
+                        font-family: $fontCuerpo;
+
+                        &:hover {
+                            color: #4e5c46;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .infoFooter {
+            width: 346px;
+            height: 200px;
+            @include flex (center, center, column);
+            margin-top: 20px;
+
+            a {
+                img {
+                    transform: scale(1.3);
+                    width: 90px;
+                    margin: 10px 0px;
+                }
+            }
+
+            .tituloF {
+                @include estiloText (34px, 2.5px, $verde);
+                font-family: $fontTitulo;
+            }
+        }
+
+        .contactoFooter {
+            width: 346px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .subtituloF {
+                margin-bottom: 20px;
+                @include estiloText (18px, 2.7px, rgb(143, 127, 154));
+                font-weight: 600;
+                text-transform: uppercase;
+                font-family: $fontCuerpo;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                a {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #77518E;
+                    text-decoration: none;
+                    font-family: $fontCuerpo;
+
+                    &:hover {
+                        color: #4e5c46;
+                    }
+
+                    i {
+                        margin-right: 15px;
+                        font-size: 22px;
+                        color: #4e5c46;
+                    }
+                }
+            }
+        }
+    }
+}

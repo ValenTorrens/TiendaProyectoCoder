@@ -1,0 +1,119 @@
+/*  C O N T A C T O  */
+/* Main */
+
+.mainContacto {
+    width: 80%;
+    margin: 0 auto;
+    height: 1200px;
+    gap: 50px;
+    @include flex (center, center, column);
+
+    .contenedorForm {
+        width: 60%;
+        background: linear-gradient(156deg,
+                rgba(131, 162, 114, .3) 11%,
+                rgba(206, 182, 221, .3) 49%,
+                rgba(250, 199, 198, .3) 90%);
+        padding: 50px;
+
+        input {
+            outline: none;
+            border: none;
+            background-color: rgba(129, 143, 122, 0.114);
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 18px;
+            font-size: 19px;
+            color: #4e5c46d4;
+            font-weight: 400;
+            font-family: sans-serif;
+
+            &::placeholder {
+                color: #4e5c46d4;
+            }
+
+            &:-webkit-autofill {
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #4e5c46d4;
+                transition: background-color 2000s ease-in-out 0s;
+                box-shadow: 2px 1px 10px #a5a5a588;
+            }
+
+            &:-webkit-autofill:hover {
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #4e5c46d4;
+                transition: background-color 2000s ease-in-out 0s;
+                box-shadow: 2px 1px 10px #a5a5a588;
+            }
+
+            &:-webkit-autofill:focus {
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #4e5c46d4;
+                transition: background-color 2000s ease-in-out 0s;
+                box-shadow: 2px 1px 10px #a5a5a588;
+            }
+
+            &:-webkit-autofill:active {
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #4e5c46d4;
+                transition: background-color 2000s ease-in-out 0s;
+                box-shadow: 2px 1px 10px #a5a5a588;
+            }
+
+            &:focus {
+                box-shadow: 2px 1px 10px #a5a5a588;
+            }
+        }
+
+        textarea {
+            @extend input;
+            resize: none;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $violeta;
+            padding-bottom: 8px;
+
+            span {
+                color: #ab8ebe;
+                font-size: 16px;
+            }
+        }
+
+        .enviar {
+            @include estiloText (18px, 5px, #fff);
+            font-family: $fontCuerpo;
+            text-transform: uppercase;
+            border: 2px solid $verde;
+            font-weight: 500;
+            background-color: $verde;
+            cursor: pointer;
+            transition: all .3s ease-in;
+
+            &:hover {
+                border: 2px solid $violeta;
+                color: #fff;
+                background: rgba(122, 109, 141, 0.5);
+            }
+        }
+    }
+
+    .contactanos {
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .link {
+            font-size: 35px;
+            color: $violeta;
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
+
+
+}

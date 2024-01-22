@@ -1,0 +1,139 @@
+/*  H E A D E R  */
+/* Navegación */
+
+.menu {
+    width: 100%;
+    @include flex (space-between, center, row);
+    position: relative;
+    z-index: 50;
+
+    .logo {
+        width: 90px;
+        margin: 10px 40px;
+    }
+
+    // Menu desplegable
+    [type="checkbox"] {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+
+        svg {
+            vertical-align: top;
+        }
+    }
+
+    // Enlaces
+    ul {
+        .itemLista {
+            display: inline-block;
+            list-style: none;
+            padding: 20px;
+
+            .enlace {
+                font-family: $fontCuerpo;
+                font-weight: 500;
+                color: $violeta;
+                text-decoration: none;
+                font-size: 18px;
+                letter-spacing: 1.3px;
+                border: 2.5px solid $violeta;
+                padding: 5px 15px;
+                transition: background-color 300ms linear;
+
+                &:hover {
+                    border-style: solid;
+                    border-width: 2.5px;
+                    border-image: linear-gradient(156deg,
+                            rgba(131, 162, 114, 1) 11%,
+                            rgba(206, 182, 221, 1) 49%,
+                            rgba(250, 199, 198, 1) 90%) 1;
+                    color: $violeta;
+                    background: linear-gradient(156deg,
+                            rgba(131, 162, 114, 0.5) 11%,
+                            rgba(206, 182, 221, 0.5) 49%,
+                            rgba(250, 199, 198, 0.5) 90%);
+                }
+            }
+        }
+    }
+
+    //icono carrito 
+    .tienda {
+        margin-right: 40px;
+    }
+}
+
+/* Banner Inicio */
+
+.banner {
+    width: 100%;
+    background: $gradiente;
+    overflow: hidden;
+    height: 400px;
+
+    .bannerContenido {
+        width: 100%;
+        @include flex (space-around, center,row-reverse);
+        overflow: hidden;
+
+        img {
+            width: 280px;
+            filter: drop-shadow(7px 5px 19px #6b6b6bb7);
+        }
+
+        .contenidoInfo {
+            .titulo {
+                font-family: $fontTitulo;
+                @include estiloText (92px, 2.5px, #fff);
+                text-shadow: 2px 1px 1px #bfbfbf;
+            }
+
+            .slogan {
+                font-family: $fontTitulo;
+                @include estiloText (30px, 1px, #fff);
+                text-shadow: 2px 1px 1px #bfbfbf;
+                margin-bottom: 34px;
+            }
+
+            .verMas {
+                font-family: $fontCuerpo;
+                @include estiloText (18px, 2.5px, #fff);
+                text-decoration: none;
+                text-shadow: 2px 1px 5px #a3a3a3;
+                border: 2px solid $verde;
+                padding: 10px 22px;
+                font-weight: 500;
+                background-color: $verde;
+                box-shadow: 2px 1px 10px #64646488;
+                transition: .3s;
+
+                &:hover {
+                    border: 2px solid $verde;
+                    background: rgb(120, 141, 109, .5);
+                }
+            }
+        }
+    }
+}
+
+/* Banner pages */
+
+.bannerPages {
+    width: 100%;
+    height: 130px;
+    background: $gradiente;
+    .bannerContenidoPages {
+        .titulo {
+            height: 130px;
+            @include flex (center, center, row);
+            font-family: $fontTitulo;
+            @include estiloText (75px, 2.5px, #fff);
+            text-shadow: 2px 1px 1px #bfbfbf;
+        }
+    }
+}
