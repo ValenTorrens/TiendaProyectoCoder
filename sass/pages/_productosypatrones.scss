@@ -222,10 +222,6 @@
                     .marron::after {
                         background-color: #8d4925;
                     }
-
-
-
-
                 }
             }
 
@@ -283,7 +279,8 @@
                 height: 370px;
                 width: 260px;
                 border: 3.5px solid $verde;
-                padding: 25px 20px 15px;
+                animation: colorBorde 2s linear infinite alternate both;
+                padding: 18px 20px 15px;
                 box-shadow: 2px 1px 5px #d8d8d8;
                 @include flex (end, stretch, column);
                 overflow: hidden;
@@ -423,6 +420,7 @@
 
                 &:hover {
                     opacity: 1;
+                    
                 }
 
                 h4 {

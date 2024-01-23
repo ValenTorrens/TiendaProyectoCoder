@@ -1,10 +1,10 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/d6a8dc03c9.js" crossorigin="anonymous"></script>
     <title>Contacto | Cinnamon</title>
@@ -16,7 +16,7 @@
         <!-- navegacion -->
         <nav class="menu">
             <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
-                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+                    alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
             <!-- Icono bars para responsive -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -35,20 +35,20 @@
             </ul>
             <!-- icono tienda / función de carrito -->
             <a href="carrito.html" class="tienda"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
-            viewBox="0 0 19.839 24" fill="#77518E" class="icon icon-cart">
-            <path id="Path_3" data-name="Path 3"
-            d="M324.717,408v-17.74l2.088.005v.031l17.751-.015V408H324.717Zm17.751-15.662H326.805v13.574h15.662Zm-5.221-3.009c0-2.13-.515-3.344-2.61-3.344s-2.61,1.215-2.61,3.344v.952h-2.088v-1.428c0-3.61,2.374-4.852,4.7-4.852a4.594,4.594,0,0,1,4.7,4.852v1.428h-2.088Z"
-            transform="translate(-324.717 -384.002)"></path>
-            </svg></a>
+                    viewBox="0 0 19.839 24" fill="#77518E" class="icon icon-cart">
+                    <path id="Path_3" data-name="Path 3"
+                        d="M324.717,408v-17.74l2.088.005v.031l17.751-.015V408H324.717Zm17.751-15.662H326.805v13.574h15.662Zm-5.221-3.009c0-2.13-.515-3.344-2.61-3.344s-2.61,1.215-2.61,3.344v.952h-2.088v-1.428c0-3.61,2.374-4.852,4.7-4.852a4.594,4.594,0,0,1,4.7,4.852v1.428h-2.088Z"
+                        transform="translate(-324.717 -384.002)"></path>
+                </svg></a>
         </nav>
         <!-- Banner -->
         <section class="bannerPages">
             <div class="bannerContenidoPages">
-                <h1 class="titulo">Contacto</h1>
+                <h1 class="titulo animate__animated animate__pulse">Contacto</h1>
             </div>
         </section>
     </header>
-    
+
     <main class="mainContacto">
 
         <!-- Formulario de contacto -->
@@ -56,14 +56,15 @@
         <article class="contenedorForm">
             <form class="contenidoForm" method="post" action="">
                 <label for="name">Nombre completo</label>
-                <input id="name" type="text" name="name" placeholder="Ingresa tu nombre completo" autocomplete="name" required> 
+                <input id="name" type="text" name="name" placeholder="Ingresa tu nombre completo" autocomplete="name"
+                    required>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" autocomplete="email" required placeholder="Ingresa tu email">
+                <input type="email" name="email" id="email" autocomplete="email" required
+                    placeholder="Ingresa tu email">
                 <label for="tel">Teléfono <span>(Opcional)</span></label>
                 <input type="tel" name="phoneNumber" id="tel" placeholder="Ingresa tu número de teléfono">
                 <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto"
-                placeholder="Ingresa el asunto de tu correo" required>
+                <input type="text" id="asunto" name="asunto" placeholder="Ingresa el asunto de tu correo" required>
                 <label for="mensaje">Mensaje <span>(Opcional)</span></label>
                 <textarea name="mensaje" id="mensaje" cols="60" rows="10"></textarea>
                 <input type="submit" class="enviar" value="Enviar">
@@ -75,42 +76,48 @@
 
             <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a class="link" href="tel:+543491000000"><i class="fa-solid fa-phone"></i></a>
-            <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
-            <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            
-        <div>
-            <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        </div> 
+            <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+
+            <div>
+                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footerContenido">
-        <section class="navegacionFooter">
-            <h3 class="subtituloF">Navegación</h3>
-            <ul>
-                <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
-                <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
-                <li class="itemNavF"><a class="link" href="patrones.html">PATRONES</a></li>
-                <li class="itemNavF"><a class="link" href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </section>
-        <section class="infoFooter">
-            <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
-                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
-            <h2 class="tituloF">Cinnamon</h2>
-        </section>
-        <section class="contactoFooter">
-            <h3 class="subtituloF">Contáctanos</h3>
-            <div>
-                <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
-                <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
-                <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
-                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
-            </div>
-    </section>
-    </div>
+            <section class="navegacionFooter">
+                <h3 class="subtituloF">Navegación</h3>
+                <ul>
+                    <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
+                    <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
+                    <li class="itemNavF"><a class="link" href="patrones.html">PATRONES</a></li>
+                    <li class="itemNavF"><a class="link" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </section>
+            <section class="infoFooter">
+                <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
+                        alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+                <h2 class="tituloF">Cinnamon</h2>
+            </section>
+            <section class="contactoFooter">
+                <h3 class="subtituloF">Contáctanos</h3>
+                <div>
+                    <a class="link" href="https://web.whatsapp.com/" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
+                    <a class="link" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
+                    <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i
+                            class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
+                    <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+                </div>
+            </section>
+        </div>
     </footer>
     <!-- Footer responsive -->
     <footer class="footerResponsive">
@@ -128,16 +135,20 @@
             <summary id="summary" class="subtitulosCat">CONTÁCTANOS<i class="fa-solid fa-plus"></i><i
                     class="fa-solid fa-minus"></i></summary>
             <div class="navDiv navC">
-                <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
-                <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
-                <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
-                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+                <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+                    +54 9 3491 000000</a>
+                <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                    @cinnamoncrochet_</a>
+                <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i
+                        class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
+                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i> Cinnamon</a>
             </div>
         </details>
         <div class="LYM">
             <a href="../index.html"><img src="../recursos/logo.svg" class="logo"
-                alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
-                <h2 class="tituloF">Cinnamon</h2>
+                    alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
+            <h2 class="tituloF">Cinnamon</h2>
         </div>
     </footer>
 </body>

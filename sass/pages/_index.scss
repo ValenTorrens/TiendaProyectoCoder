@@ -62,7 +62,8 @@
         .cards {
             width: 260px;
             height: 370px;
-            border: 3.5px solid $verde;
+            border: 3.5px solid #fff;
+            animation: colorBorde 2s linear infinite alternate both;
             padding: 15px;
             box-shadow: 2px 1px 5px #d8d8d8;
             @include flex (end, stretch, column);

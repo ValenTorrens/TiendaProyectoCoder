@@ -1,31 +1,46 @@
 //Variables 
 
 //fonts
-$fontCuerpo:'Montserrat';
-$fontTitulo:'Agbalumo';
+$fontCuerpo: 'Montserrat';
+$fontTitulo: 'Agbalumo';
 
 //paleta
-$violeta:#77518E;
-$violetaClaro:#a170c0;
-$verde:#788d6d;
-$rosa:#e78282;
+$violeta: #77518E;
+$violetaClaro: #a170c0;
+$verde: #788d6d;
+$rosa: #e78282;
 $gradiente: linear-gradient(156deg,
-rgba(131, 162, 114, 1) 11%,
-rgba(206, 182, 221, 1) 49%,
-rgba(250, 199, 198, 1) 90%);
+        rgba(131, 162, 114, 1) 11%,
+        rgba(206, 182, 221, 1) 49%,
+        rgba(250, 199, 198, 1) 90%);
 
 //mixin 
 
-@mixin flex ($justify,$aling,$direction){
+@mixin flex ($justify, $aling, $direction) {
     display: flex;
     justify-content: $justify;
     align-items: $aling;
     flex-direction: $direction;
 }
 
-@mixin estiloText ($size,$spacing,$color){
+@mixin estiloText ($size, $spacing, $color) {
     font-size: $size;
-    letter-spacing:$spacing;
-    color:$color;
+    letter-spacing: $spacing;
+    color: $color;
 }
 
+// animacion fondo 
+
+@keyframes colorBorde {
+    0% {
+        border-color: $verde;
+    }
+
+    50% {
+        border-color: $violetaClaro;
+    }
+
+    100% {
+        border-color: $rosa;
+    }
+}

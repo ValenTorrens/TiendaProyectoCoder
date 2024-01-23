@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/d6a8dc03c9.js" crossorigin="anonymous"></script>
     <title>Patrones | Cinnamon</title>
@@ -46,7 +47,7 @@
         <!-- Banner -->
         <section class="bannerPages">
             <div class="bannerContenidoPages">
-                <h1 class="titulo">Patrones</h1>
+                <h1 class="titulo animate__animated animate__pulse">Patrones</h1>
             </div>
         </section>
     </header>
@@ -162,17 +163,13 @@
                                 </label>
                                 <input type="checkbox" name="posavasos" id="va"><label for="va"> POSA
                                     VASOS </label>
-                                <input type="checkbox" name="portatarjetas" id="tar"><label
-                                    for="tar"> PORTA
+                                <input type="checkbox" name="portatarjetas" id="tar"><label for="tar"> PORTA
                                     TARJETAS </label>
-                                <input type="checkbox" name="portaencendedor" id="enc"><label
-                                    for="enc">
+                                <input type="checkbox" name="portaencendedor" id="enc"><label for="enc">
                                     PORTA ENCENDEDOR </label>
-                                <input type="checkbox" name="portatelefonos" id="tel"><label
-                                    for="tel"> PORTA
+                                <input type="checkbox" name="portatelefonos" id="tel"><label for="tel"> PORTA
                                     TELÉFONOS </label>
-                                <input type="checkbox" name="portabotellas" id="bot"><label
-                                    for="bot"> PORTA
+                                <input type="checkbox" name="portabotellas" id="bot"><label for="bot"> PORTA
                                     BOTELLAS </label>
                                 <input type="checkbox" name="fundas" id="fun"><label for="fun"> FUNDAS </label>
                                 <input type="checkbox" name="mantas" id="man"><label for="man"> MANTAS </label>
@@ -185,7 +182,8 @@
                         </section>
                         <h2 class="filtros"> Filtros </h2>
                         <details class="coloresD precios">
-                            <summary class="subtitulosCat">PRECIO <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                            <summary class="subtitulosCat">PRECIO <i class="fa-solid fa-plus"></i><i
+                                    class="fa-solid fa-minus"></i>
                             </summary>
                             <div class="coloresDiv">
                                 <input type="checkbox" name="gratis" id="gratis"><label for="gratis">Gratis</label>
@@ -193,13 +191,16 @@
                             <p> borrar filtros </p>
                         </details>
                         <details class="coloresD">
-                            <summary class="subtitulosCat">Nivel <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                            <summary class="subtitulosCat">Nivel <i class="fa-solid fa-plus"></i><i
+                                    class="fa-solid fa-minus"></i>
                             </summary>
                             <div class="coloresDiv niveles">
                                 <input type="checkbox" name="principiante" id="principiante"><label
                                     for="principiante">principiante</label>
-                                <input type="checkbox" name="intermedio" id="intermedio"><label for="intermedio">intermedio</label>
-                                <input type="checkbox" name="avanzado" id="avanzado"><label for="avanzado">avanzado</label>
+                                <input type="checkbox" name="intermedio" id="intermedio"><label
+                                    for="intermedio">intermedio</label>
+                                <input type="checkbox" name="avanzado" id="avanzado"><label
+                                    for="avanzado">avanzado</label>
                             </div>
                             <p> borrar filtros </p>
                         </details>
@@ -207,7 +208,8 @@
                 </div>
             </div>
             <section class="tallesDiv filtrosSel coloresDiv niveles">
-                <input type="checkbox" name="principiante" id="principiante"><label for="principiante">principiante</label>
+                <input type="checkbox" name="principiante" id="principiante"><label
+                    for="principiante">principiante</label>
                 <input type="checkbox" name="intermedio" id="intermedio"><label for="intermedio">intermedio</label>
                 <input type="checkbox" name="gratis" id="gratis"><label for="gratis">Gratis</label>
                 <a href="#"> Borrar filtros</a>
@@ -225,13 +227,14 @@
                     <p class="infoProducto"><span>Top de malla con forma de corazón</span> | nivel principiante</p>
                     <div class="infoComprar">
                         <p class="gratis">$0000</p>
-                        <p >Gratis</p>
+                        <p>Gratis</p>
                     </div>
                     <button href="#">Agregar al carrito</button>
                 </div>
             </article>
             <article class="card-patrones">
-                <img src="../recursos/producto14.jpg" alt="Top en forma de sobre con aplique de corazón a crochet" class="fondo">
+                <img src="../recursos/producto14.jpg" alt="Top en forma de sobre con aplique de corazón a crochet"
+                    class="fondo">
                 <div class="info-card-patrones">
                     <h4>Top Rebecca</h4>
                     <p class="infoProducto"><span>Top con vuelos y aplique de corazón</span> | nivel intermedio</p>
@@ -243,7 +246,8 @@
                 </div>
             </article>
             <article class="card-patrones">
-                <img src="../recursos/producto15.jpg" alt="Manta hecha con cuadrados a crochet de flores con vuelo" class="fondo">
+                <img src="../recursos/producto15.jpg" alt="Manta hecha con cuadrados a crochet de flores con vuelo"
+                    class="fondo">
                 <div class="info-card-patrones">
                     <h4>Manta Alexa</h4>
                     <p class="infoProducto"><span>Manta hecha con cuadrados de flores con vuelo</span> | nivel avanzado
@@ -256,7 +260,8 @@
                 </div>
             </article>
             <article class="card-patrones">
-                <img src="../recursos/producto16.jpg" alt="Funda de almohadon a crochet hecha con cuadrados de flores" class="fondo">
+                <img src="../recursos/producto16.jpg" alt="Funda de almohadon a crochet hecha con cuadrados de flores"
+                    class="fondo">
                 <div class="info-card-patrones">
                     <h4>Funda Rocco</h4>
                     <p class="infoProducto"><span>Funda de almohadon hecha con cuadrados de flores</span> | nivel
@@ -289,7 +294,7 @@
                     <p class="infoProducto"><span>Cuadrado con centro de corazón</span> | nivel principiante</p>
                     <div class="infoComprar">
                         <p class="gratis">$0000</p>
-                        <p >Gratis</p>
+                        <p>Gratis</p>
                     </div>
                     <button href="#">Agregar al carrito</button>
                 </div>
@@ -302,7 +307,7 @@
                     <p class="infoProducto"><span>Bincha con detalles de frutillas</span> | nivel principiante</p>
                     <div class="infoComprar">
                         <p class="gratis">$0000</p>
-                        <p >Gratis</p>
+                        <p>Gratis</p>
                     </div>
                     <button href="#">Agregar al carrito</button>
                 </div>
@@ -324,7 +329,7 @@
     <footer class="footer">
         <div class="footerContenido">
             <section class="navegacionFooter">
-                <h5 class="subtituloF" >Navegación</h5>
+                <h5 class="subtituloF">Navegación</h5>
                 <ul>
                     <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
                     <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
@@ -340,10 +345,14 @@
             <section class="contactoFooter">
                 <h5 class="subtituloF">Contáctanos</h5>
                 <div>
-                    <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
-                    <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
-                    <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
-                    <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+                    <a class="link" href="https://web.whatsapp.com/" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
+                    <a class="link" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
+                    <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i
+                            class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
+                    <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i> Cinnamon</a>
                 </div>
             </section>
         </div>
@@ -364,10 +373,14 @@
             <summary id="summary" class="subtitulosCat">CONTÁCTANOS<i class="fa-solid fa-plus"></i><i
                     class="fa-solid fa-minus"></i></summary>
             <div class="navDiv navC">
-                <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 3491 000000</a>
-                <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> @cinnamoncrochet_</a>
-                <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
-                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i> Cinnamon</a>
+                <a class="link" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+                    +54 9 3491 000000</a>
+                <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                    @cinnamoncrochet_</a>
+                <a class="link" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i
+                        class="fa-solid fa-envelope"></i> cinnamon@gmail.com</a>
+                <a class="link" href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i> Cinnamon</a>
             </div>
         </details>
         <div class="LYM">
