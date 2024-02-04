@@ -9,7 +9,8 @@
     @include flex (center, center, column);
 
     .contenedorForm {
-        width: 60%;
+        min-width: 400px;
+        max-width: 600px;
         background: linear-gradient(156deg,
                 rgba(131, 162, 114, .3) 11%,
                 rgba(206, 182, 221, .3) 49%,
@@ -102,13 +103,16 @@
     }
 
     .contactanos {
-        width: 60%;
+        width: 100%;
+        max-width: 600px;
+        min-width: 400px;
         display: flex;
         justify-content: space-evenly;
 
         .link {
             font-size: 35px;
             color: $violeta;
+
             &:hover {
                 color: $verde;
             }

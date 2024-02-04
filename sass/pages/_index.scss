@@ -5,25 +5,29 @@
 
 .servicios {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 90px;
     @include flex (space-between, center, row);
 
 
     .cardServicios {
-        display: flex;
-        gap: 20px;
+        position: relative;
 
         i {
             font-size: 25px;
             color: $verde;
+            position: absolute;
+            top: 2px;
+            left: -5px;
         }
 
         .infoCardServicios {
-            @include estiloText (19px, 2px, $violeta);
+            @include estiloText (17px, 2px, $violeta);
             font-family: $fontCuerpo;
             font-weight: 500;
             text-transform: uppercase;
+            text-align: center;
+            padding: 0 25px;
         }
     }
 
@@ -39,8 +43,8 @@
 
 .destacados {
     margin: 30px auto;
-    width: 80%;
-    @include flex (space-around, center, column);
+    width: 100%;
+    @include flex (center, center, column);
     color: $violeta;
 
     .tituloSection {
@@ -55,12 +59,15 @@
         width: 100%;
         margin-top: 30px;
         margin-bottom: 50px;
-        gap: 20px;
-        @include flex (space-between, center, row);
-        flex-wrap: wrap;
+        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 260px));
+        grid-template-rows: 370px;
+        padding: 0 15px;
+        justify-content: center;
+        max-width:1380px;
 
         .cards {
-            width: 260px;
             height: 370px;
             border: 3.5px solid #fff;
             animation: colorBorde 2s linear infinite alternate both;
@@ -133,6 +140,7 @@
         text-decoration: none;
         border: 2.5px solid $violeta;
         transition: background-color 300ms ease-in-out;
+
         &:hover {
             border-style: solid;
             border-width: 2.5px;
@@ -169,11 +177,11 @@
     }
 
     .contenedorProxi {
-        width: 80%;
+        width: 100%;
         margin: 20px 0 30px 0;
         height: auto;
         gap: 10px;
-        @include flex (space-between, center,row);
+        @include flex (center, center, row);
         flex-wrap: wrap;
     }
 
@@ -190,6 +198,8 @@
 .nuevos {
     @extend .destacados;
     margin: 60px auto;
+
+
 }
 
 /* proximamente responsive*/

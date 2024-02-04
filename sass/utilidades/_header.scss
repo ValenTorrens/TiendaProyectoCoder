@@ -9,7 +9,7 @@
 
     .logo {
         width: 90px;
-        margin: 10px 40px;
+        margin: 10px 30px;
     }
 
     // Menu desplegable
@@ -29,6 +29,8 @@
 
     // Enlaces
     ul {
+        padding-left: 0;
+
         .itemLista {
             display: inline-block;
             list-style: none;
@@ -71,6 +73,7 @@
 /* Banner Inicio */
 
 .banner {
+    overflow: hidden;
     width: 100%;
     background: $gradiente;
 
@@ -129,6 +132,7 @@
     height: 130px;
     background: $gradiente;
     position: relative;
+    overflow: hidden;
 
     .bannerContenidoPages {
         .titulo {
