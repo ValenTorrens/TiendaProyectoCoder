@@ -142,7 +142,7 @@
                 rgba(250, 199, 198, 1) 90%) 1;
         padding: 20px;
 
-        h2 {
+        h3 {
             @include estiloText (20px, 2.5px, $violetaClaro);
             text-transform: uppercase;
             margin-bottom: 25px;

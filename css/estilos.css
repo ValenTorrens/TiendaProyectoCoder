@@ -1107,7 +1107,7 @@ html {
   border-image: linear-gradient(156deg, rgb(131, 162, 114) 11%, rgb(206, 182, 221) 49%, rgb(250, 199, 198) 90%) 1;
   padding: 20px;
 }
-.mainCarrito .resumenCompra h2 {
+.mainCarrito .resumenCompra h3 {
   font-size: 20px;
   letter-spacing: 2.5px;
   color: #a170c0;

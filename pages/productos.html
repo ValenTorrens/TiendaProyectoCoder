@@ -8,7 +8,7 @@
     <!-- Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/d6a8dc03c9.js" crossorigin="anonymous"></script>
 
@@ -32,7 +32,7 @@
             <!-- Icono bars para responsive -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
-                <svg class="bars" focusable="false" role="presentation" class="icon icon-hamburger" width="40"
+                <svg focusable="false" role="presentation" class="icon icon-hamburger bars" width="40"
                     height="40" viewBox="0 0 20 25">
                     <path fill="#77518E"
                         d="M4.889 14.958h22.222v2.222H4.889v-2.222zM4.889 8.292h22.222v2.222H4.889V8.292zM4.889 21.625h22.222v2.222H4.889v-2.222z">
@@ -58,7 +58,7 @@
 
         <!-- Servicios -->
 
-        <section class="servicios">
+        <div class="servicios">
             <div class="cardServicios">
                 <i class="fa-solid fa-truck-fast"></i>
                 <p class="infoCardServicios">Entregas a todo el país</p>
@@ -71,7 +71,7 @@
                 <i class="fa-solid fa-dollar-sign"></i>
                 <p class="infoCardServicios">Mínimo de compra $00,000</p>
             </div>
-        </section>
+        </div>
 
         <!-- Servicios responsive bootstrap-->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -132,7 +132,7 @@
             <section class="accesorios">
                 <h3 class="subtitulosCat">Accesorios</h3>
                 <div class="opciones">
-                    <input type="checkbox" name="tote bags" id="tote bag"><label for="tote bag"> TOTE BAGS </label>
+                    <input type="checkbox" name="tote bags" id="totebag"><label for="totebag"> TOTE BAGS </label>
                     <input type="checkbox" name="carteras" id="carteras"><label for="carteras"> CARTERAS / BOLSOS
                     </label>
                     <input type="checkbox" name="posavasos" id="posavasos"><label for="posavasos"> POSA VASOS </label>
@@ -208,7 +208,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por</h5>
+                    <h3 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -259,7 +259,7 @@
                                 <input type="checkbox" name="mantas" id="man"><label for="man"> MANTAS </label>
                                 <input type="checkbox" name="bufandas" id="buf"><label for="buf"> BUFANDAS
                                 </label>
-                                <input type="checkbox" name="sombreros" id="sombreros"><label for="sombreros"> SOMBREROS
+                                <input type="checkbox" name="sombreros" id="som"><label for="som"> SOMBREROS
                                     / GORROS
                                 </label>
                             </div>
@@ -270,45 +270,45 @@
                                     class="fa-solid fa-minus"></i>
                             </summary>
                             <div class="coloresDiv">
-                                <input type="checkbox" name="negro" id="negro"><label for="negro"><span
+                                <input type="checkbox" name="negro" id="neg"><label for="neg"><span
                                         class="negro"></span>negro</label>
-                                <input type="checkbox" name="blanco" id="blanco"><label for="blanco"><span
+                                <input type="checkbox" name="blanco" id="blan"><label for="blan"><span
                                         class="Blanco"></span>blanco</label>
-                                <input type="checkbox" name="gris" id="gris"><label for="gris"><span
+                                <input type="checkbox" name="gris" id="gri"><label for="gri"><span
                                         class="gris"></span>gris</label>
-                                <input type="checkbox" name="violeta" id="violeta"><label for="violeta"><span
+                                <input type="checkbox" name="violeta" id="viole"><label for="viole"><span
                                         class="violeta"></span>violeta</label>
-                                <input type="checkbox" name="azul" id="azul"><label for="azul"><span
+                                <input type="checkbox" name="azul" id="az"><label for="az"><span
                                         class="azul"></span>azul</label>
-                                <input type="checkbox" name="celeste" id="celeste"><label for="celeste"><span
+                                <input type="checkbox" name="celeste" id="cele"><label for="cele"><span
                                         class="celeste"></span>celeste</label>
-                                <input type="checkbox" name="verde" id="verde"><label for="verde"><span
+                                <input type="checkbox" name="verde" id="ver"><label for="ver"><span
                                         class="verde"></span>verde</label>
-                                <input type="checkbox" name="amarillo" id="amarillo"><label for="amarillo"><span
+                                <input type="checkbox" name="amarillo" id="amaril"><label for="amaril"><span
                                         class="amarillo"></span>amarillo</label>
-                                <input type="checkbox" name="rojo" id="rojo"><label for="rojo"><span
+                                <input type="checkbox" name="rojo" id="ro"><label for="ro"><span
                                         class="rojo"></span>rojo</label>
-                                <input type="checkbox" name="naranja" id="naranja"><label for="naranja"><span
+                                <input type="checkbox" name="naranja" id="naran"><label for="naran"><span
                                         class="naranja"></span>naranja</label>
-                                <input type="checkbox" name="rosado" id="rosado"><label for="rosado"><span
+                                <input type="checkbox" name="rosado" id="rosa"><label for="rosa"><span
                                         class="rosado"></span>rosado</label>
-                                <input type="checkbox" name="marron" id="marron"><label for="marron"><span
+                                <input type="checkbox" name="marron" id="marr"><label for="marr"><span
                                         class="marron"></span>marrón</label>
                             </div>
                             <p> borrar filtros </p>
                         </details>
                         <details class="tallesD">
-                            <summary id="summary" class="subtitulosCat">talle<i class="fa-solid fa-plus"></i><i
+                            <summary id="tallesDesp" class="subtitulosCat">talle<i class="fa-solid fa-plus"></i><i
                                     class="fa-solid fa-minus"></i></summary>
                             <div class="tallesDiv">
-                                <input type="checkbox" name="xxs" id="xxs"><label for="xxs">xxs</label>
-                                <input type="checkbox" name="xs" id="xs"><label for="xs">xs</label>
-                                <input type="checkbox" name="s" id="s"><label for="s">s</label>
-                                <input type="checkbox" name="m" id="m"><label for="m">m</label>
-                                <input type="checkbox" name="l" id="l"><label for="l">l</label>
-                                <input type="checkbox" name="xl" id="xl"><label for="xl">xl</label>
-                                <input type="checkbox" name="xxl" id="xxl"><label for="xxl">xxl</label>
-                                <input type="checkbox" name="3xl" id="3xl"><label for="3xl">3xl</label>
+                                <input type="checkbox" name="xxs" id="Txxs"><label for="Txxs">xxs</label>
+                                <input type="checkbox" name="xs" id="Txs"><label for="Txs">xs</label>
+                                <input type="checkbox" name="s" id="Ts"><label for="Ts">s</label>
+                                <input type="checkbox" name="m" id="Tm"><label for="Tm">m</label>
+                                <input type="checkbox" name="l" id="Tl"><label for="Tl">l</label>
+                                <input type="checkbox" name="xl" id="Txl"><label for="Txl">xl</label>
+                                <input type="checkbox" name="xxl" id="Txxl"><label for="Txxl">xxl</label>
+                                <input type="checkbox" name="3xl" id="T3xl"><label for="T3xl">3xl</label>
                             </div>
                             <p> borrar filtros </p>
                             <a href="#">Ver guia de talles</a>
@@ -316,16 +316,16 @@
                     </aside>
                 </div>
             </div>
-            <section class="tallesDiv filtrosSel coloresDiv">
-                <input type="checkbox" name="s" id="s"><label for="s">s</label>
-                <input type="checkbox" name="m" id="m"><label for="m">m</label>
-                <input type="checkbox" name="rojo" id="rojo"><label for="rojo"><span class="rojo"></span>rojo</label>
-                <input type="checkbox" name="rosado" id="rosado"><label for="rosado"><span
+            <div class="tallesDiv filtrosSel coloresDiv">
+                <input type="checkbox" name="s" id="tas"><label for="tas">s</label>
+                <input type="checkbox" name="m" id="tam"><label for="tam">m</label>
+                <input type="checkbox" name="rojo" id="roj"><label for="roj"><span class="rojo"></span>rojo</label>
+                <input type="checkbox" name="rosado" id="rosad"><label for="rosad"><span
                         class="rosado"></span>rosado</label>
-                <input type="checkbox" name="violeta" id="violeta"><label for="violeta"><span
+                <input type="checkbox" name="violeta" id="violet"><label for="violet"><span
                         class="violeta"></span>violeta</label>
                 <a href="#"> Borrar filtros</a>
-            </section>
+            </div>
         </section>
 
         <section class="productos">
@@ -386,7 +386,7 @@
     <footer class="footer">
         <div class="footerContenido">
             <section class="navegacionFooter">
-                <h5 class="subtituloF">Navegación</h5>
+                <h4 class="subtituloF">Navegación</h4>
                 <ul>
                     <li class="itemNavF"><a class="link" href="../index.html">HOME</a></li>
                     <li class="itemNavF"><a class="link" href="productos.html">PRODUCTOS</a></li>
@@ -397,10 +397,10 @@
             <section class="infoFooter">
                 <a href="../index.html"><img src="../recursos/logo.svg" class="logo" loading="lazy"
                         alt="Logo de la marca Cinnamon, tejido a dos agujas cuadrado con un corazon tejido en el centro"></a>
-                <h4 class="tituloF">Cinnamon</h4>
+                <h5 class="tituloF">Cinnamon</h5>
             </section>
             <section class="contactoFooter">
-                <h5 class="subtituloF">Contáctanos</h5>
+                <h4 class="subtituloF">Contáctanos</h4>
                 <div>
                     <a class="link" href="https://web.whatsapp.com/" target="_blank"><i
                             class="fa-brands fa-whatsapp"></i> +54 9 3491
