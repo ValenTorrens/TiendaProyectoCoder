@@ -22,7 +22,7 @@ html {
 
 @keyframes colorBorde {
   0% {
-    border-color: #687D59;
+    border-color: #4F693F;
   }
   50% {
     border-color: #a170c0;
@@ -129,15 +129,15 @@ html {
   color: #fff;
   text-decoration: none;
   text-shadow: 2px 1px 5px #a3a3a3;
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   padding: 10px 22px;
   font-weight: 500;
-  background-color: #687D59;
+  background-color: #4F693F;
   box-shadow: 2px 1px 10px rgba(100, 100, 100, 0.5333333333);
   transition: 0.3s;
 }
 .banner .bannerContenido .contenidoInfo .verMas:hover {
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   background: rgba(120, 141, 109, 0.5);
 }
 
@@ -240,7 +240,7 @@ html {
 .footer .footerContenido .infoFooter .tituloF {
   font-size: 34px;
   letter-spacing: 2.5px;
-  color: #687D59;
+  color: #4F693F;
   font-family: "Agbalumo";
 }
 .footer .footerContenido .contactoFooter {
@@ -297,7 +297,7 @@ html {
 }
 .servicios .cardServicios i {
   font-size: 25px;
-  color: #687D59;
+  color: #4F693F;
   position: absolute;
   top: 2px;
   left: -5px;
@@ -396,16 +396,16 @@ html {
   text-shadow: 2px 1px 5px #a3a3a3;
   text-decoration: none;
   font-family: "Montserrat";
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   padding: 4px 10px;
   font-weight: 500;
-  background-color: #687D59;
+  background-color: #4F693F;
   text-transform: uppercase;
   box-shadow: 2px 1px 4px rgba(200, 200, 200, 0.5333333333);
   transition: 0.5s, color 0.2s, font-weight 0.2s;
 }
 .destacados .contenedorCards .cards .preCom a:hover, .nuevos .contenedorCards .cards .preCom a:hover {
-  color: #687D59;
+  color: #4F693F;
   background-color: transparent;
   font-weight: 600;
   text-shadow: none;
@@ -518,7 +518,7 @@ html {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 2px;
-  color: #687D59;
+  color: #4F693F;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -666,7 +666,7 @@ html {
   font-size: 16px;
   margin: 20px 0;
   text-transform: capitalize;
-  color: #687D59;
+  color: #4F693F;
   cursor: pointer;
 }
 .main-productos .tallesD .tallesDiv, .mainPatrones .tallesD .tallesDiv {
@@ -676,13 +676,13 @@ html {
   color: #fff;
   text-decoration: none;
   padding: 5px 10px;
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   background-color: rgba(100, 130, 84, 0.9137254902);
   transition: all 0.3s ease-in;
 }
 .main-productos .tallesD a:hover, .mainPatrones .tallesD a:hover {
-  color: #687D59;
-  border: 2px solid #687D59;
+  color: #4F693F;
+  border: 2px solid #4F693F;
   background: transparent;
 }
 .main-productos .productos, .mainPatrones .productos {
@@ -703,7 +703,7 @@ html {
 .main-productos .productos .cards-productos .cards, .mainPatrones .productos .cards-productos .cards {
   height: 370px;
   width: 260px;
-  border: 3.5px solid #687D59;
+  border: 3.5px solid #4F693F;
   animation: colorBorde 2s linear infinite alternate both;
   padding: 18px 20px 15px;
   box-shadow: 2px 1px 5px #d8d8d8;
@@ -747,16 +747,16 @@ html {
   color: #fff;
   text-shadow: 2px 1px 5px #a3a3a3;
   text-decoration: none;
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   padding: 6px 18px;
   font-weight: 500;
-  background-color: #687D59;
+  background-color: #4F693F;
   text-transform: uppercase;
   box-shadow: 2px 1px 4px rgba(200, 200, 200, 0.5333333333);
   transition: 0.5s, color 0.2s, font-weight 0.2s;
 }
 .main-productos .productos .cards-productos .cards .preCom a:hover, .mainPatrones .productos .cards-productos .cards .preCom a:hover {
-  color: #687D59;
+  color: #4F693F;
   background-color: transparent;
   font-weight: 600;
   text-shadow: none;
@@ -835,7 +835,7 @@ html {
 .mainPatrones .patrones .card-patrones .info-card-patrones:hover {
   opacity: 1;
 }
-.mainPatrones .patrones .card-patrones .info-card-patrones h4 {
+.mainPatrones .patrones .card-patrones .info-card-patrones h3 {
   font-size: 22px;
   letter-spacing: 2.3px;
   color: #fff;
@@ -871,7 +871,7 @@ html {
   padding: 8px 10px;
   text-shadow: 2px 1px 5px #a3a3a3;
   font-family: "Montserrat";
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   box-shadow: 2px 1px 10px rgba(100, 100, 100, 0.5333333333);
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
@@ -965,9 +965,9 @@ html {
   color: #fff;
   font-family: "Montserrat";
   text-transform: uppercase;
-  border: 2px solid #687D59;
+  border: 2px solid #4F693F;
   font-weight: 500;
-  background-color: #687D59;
+  background-color: #4F693F;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -988,7 +988,7 @@ html {
   color: #77518E;
 }
 .mainContacto .contactanos .link:hover {
-  color: #687D59;
+  color: #4F693F;
 }
 
 /* C A R R I T O */
@@ -1039,7 +1039,7 @@ html {
   object-fit: cover;
   object-position: center;
 }
-.mainCarrito .tabla table tbody tr td .celda-producto .infoCelda h3 {
+.mainCarrito .tabla table tbody tr td .celda-producto .infoCelda h2 {
   font-size: 18px;
   letter-spacing: 2px;
   color: #77518E;
@@ -1659,7 +1659,7 @@ html {
   .footerResponsive .LYM .tituloF {
     font-size: 28px;
     letter-spacing: 2.5px;
-    color: #687D59;
+    color: #4F693F;
     font-weight: 500;
     font-family: "Agbalumo";
   }
