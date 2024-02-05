@@ -1039,7 +1039,7 @@ html {
   object-fit: cover;
   object-position: center;
 }
-.mainCarrito .tabla table tbody tr td .celda-producto .infoCelda h2 {
+.mainCarrito .tabla table tbody tr td .celda-producto .infoCelda h3 {
   font-size: 18px;
   letter-spacing: 2px;
   color: #77518E;
