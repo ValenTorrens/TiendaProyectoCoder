@@ -70,9 +70,9 @@
 
                                 .boton {
                                     @include estiloText (12px, 2px, #fff);
-                                    border: 2px solid $violetaClaro;
+                                    border: 2px solid #663983;
                                     padding: 5px 10px;
-                                    background: $violetaClaro;
+                                    background: #663983;
                                     text-transform: uppercase;
                                     position: absolute;
                                     bottom: 0;
@@ -80,7 +80,7 @@
                                     transition: .5s;
 
                                     &:hover {
-                                        color: $violetaClaro;
+                                        color: #663983;
                                         background: transparent;
                                     }
                                 }
@@ -187,9 +187,9 @@
                     width: 65%;
                     padding: 5px;
                     outline: none;
-                    color: $violetaClaro;
+                    color:#663983;
                     font-weight: 600;
-                    border: 2px solid $violetaClaro;
+                    border: 2px solid #663983;
                     margin-bottom: 10px;
                 }
 
@@ -199,8 +199,8 @@
                     width: 33.8%;
                     margin-bottom: 35px;
                     padding: 6px 0;
-                    border: 2px solid $violetaClaro;
-                    background: $violetaClaro;
+                    border: 2px solid #663983;
+                    background: #663983;
                     text-transform: uppercase;
                     transition: all .5s ease-in;
 
@@ -217,8 +217,8 @@
             @include estiloText (12px, 2px, #fff);
             position: relative;
             margin-bottom: 15px;
-            border: 2px solid $violetaClaro;
-            background: $violetaClaro;
+            border: 2px solid #663983;
+            background: #663983;
             text-transform: uppercase;
             transition: all .5s ease-in;
             display: block;
